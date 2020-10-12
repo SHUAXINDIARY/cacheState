@@ -2,8 +2,13 @@
 vuex持久化的插件，自用，不能保证线上质量
 
 # 文件说明
+**src**
 - cacheState：核心逻辑
 - installCacheState：vue全局注入api文件
+
+**example**
+- 使用案例（vue-cli4.x初始化的项目）
+
 
 # API
 **removeCache(callback:Function?,target:Arrary?)**
