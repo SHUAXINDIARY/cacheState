@@ -16,7 +16,7 @@ const deepSet = (state, keysArr, val) => {
     obj[keysArr[keysArr.length - 1]] = val ? val : obj[keysArr[keysArr.length - 1]]
 }
 // 每次刷新更新state
-const initState = (store, watch) => {
+export function initState(store, watch) {
     const obj = {}
     watch.forEach(key => {
         let val
@@ -33,7 +33,7 @@ const initState = (store, watch) => {
     })
     return obj
 }
-const cacheData = (watch, state) => {
+export function cacheData(watch, state) {
     watch.forEach(key => {
         if (key.indexOf('.') > -1) {
             localStorage.setItem(`deep_${key}`, deepRead(state, key.split('.')))
