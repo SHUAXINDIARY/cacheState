@@ -1,6 +1,7 @@
 import {
     removeCache,
-    cacheData
+    cacheData,
+    initState
 } from './cacheState'
 export default {
     install(Vue) {
