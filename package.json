@@ -1,0 +1,11 @@
+{
+  "name": "cachestate",
+  "version": "1.0.0",
+  "description": "vuex持久化插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "刷新",
+  "license": "ISC"
+}
