@@ -1,13 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import {
-  cacheState
-} from '../until/cacheState'
+import cs from 'cachestate'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  plugins: [cacheState({
+  plugins: [cs.cacheState({
     // watch: []
     watch: ['name', 'user.name', 'other.msg']
     // watch: ['name']
