@@ -15,7 +15,7 @@ const deepSet = (state, keysArr, val) => {
     })
     obj[keysArr[keysArr.length - 1]] = val ? val : obj[keysArr[keysArr.length - 1]]
 }
-// 每次刷新更新state
+// 获取缓存数据
 export function initState(store, watch) {
     const obj = {}
     watch.forEach(key => {
@@ -33,6 +33,7 @@ export function initState(store, watch) {
     })
     return obj
 }
+// 缓存数据
 export function cacheData(watch, state) {
     watch.forEach(key => {
         if (key.indexOf('.') > -1) {
